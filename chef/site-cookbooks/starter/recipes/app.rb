@@ -30,13 +30,13 @@ template "/etc/logrotate.d/rails_app" do
 end
 
 execute "change group #{node['user']['name']}" do
-  command "chown #{node['user']['name']}:#{node['user']['name']} -R /home/#{node['user']['name']}/.rbenv/versions/2.1.5"
+  command "chown #{node['user']['name']}:#{node['user']['name']} -R /home/#{node['user']['name']}/.rbenv/versions/#{node['rbenv']['user_installs'][0]['global']}"
   action :run
-  only_if do File.exists?("/home/#{node['user']['name']}/.rbenv/versions/2.1.5") end
+  only_if do File.exists?("/home/#{node['user']['name']}/.rbenv/versions/#{node['rbenv']['user_installs'][0]['global']}") end
 end
 
 execute "fix permissions - rbenv folder" do
-  command "chmod -R 755 /home/#{node['user']['name']}/.rbenv/versions/2.1.5"
+  command "chmod -R 755 /home/#{node['user']['name']}/.rbenv/versions/#{node['rbenv']['user_installs'][0]['global']}"
   action :run
-  only_if do File.exists?("/home/#{node['user']['name']}/.rbenv/versions/2.1.5") end
+  only_if do File.exists?("/home/#{node['user']['name']}/.rbenv/versions/#{node['rbenv']['user_installs'][0]['global']}") end
 end

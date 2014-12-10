@@ -1,14 +1,9 @@
 {
   "app": {
     "server_name": "_",
-    "listen": "8080",
     "name": "starter",
     "dir": "/starter",
-    "env": "development",
-    "nginx": {
-      "vhosts_dir": "",
-      "user": ""
-    }
+    "env": "development"
   },
   "user": {
     "name": "vagrant"
