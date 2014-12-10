@@ -15,7 +15,7 @@
     "init_style": "init",
     "install_method": "source",
     "client_max_body_size": "1m",
-    "port": "8080",
+    "port": "80",
     "source": {
       "modules": [
         "nginx::http_gzip_static_module",
