@@ -1,0 +1,12 @@
+server {
+    listen 80 default;
+
+    server_name <%= node['app']['server_name'] %>;
+
+    rails_env <%= node['app']['env'] %>;
+    passenger_enabled on;
+    
+    access_log  <%= node['nginx']['log_dir'] %>/<%= node['app']['name'] %>.access.log;
+
+    root <%= node['app']['dir'] %>/public;
+}

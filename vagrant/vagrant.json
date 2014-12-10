@@ -1,0 +1,60 @@
+{
+  "app": {
+    "server_name": "_",
+    "listen": "8080",
+    "name": "starter",
+    "dir": "/starter",
+    "env": "development",
+    "nginx": {
+      "vhosts_dir": "",
+      "user": ""
+    }
+  },
+  "user": {
+    "name": "vagrant"
+  },
+  "nginx": {
+    "version": "1.6.2",
+    "log_dir": "/var/log/nginx",
+    "user": "www-data",
+    "init_style": "init",
+    "install_method": "source",
+    "client_max_body_size": "1m",
+    "port": "8080",
+    "source": {
+      "modules": [
+        "nginx::http_gzip_static_module",
+        "nginx::passenger"
+      ]
+    },
+    "passenger": {
+      "version": "5.0.0.beta1",
+      "ruby": "/home/vagrant/.rbenv/versions/2.1.5/bin/ruby",
+      "root": "/home/vagrant/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/passenger-5.0.0.beta1/"
+    }
+  },
+  "mysql": {
+    "server_debian_password": "admin",
+    "server_root_password": "admin",
+    "server_repl_password": "admin"
+  },
+  "rbenv": {
+    "user_installs": [
+      {
+        "user": "vagrant",
+        "rubies": ["2.1.5"],
+        "global": "2.1.5",
+        "gems": {
+          "2.1.0": [
+            {"name": "bundler"},
+            {"name": "passenger", "version": "5.0.0.beta1"}
+          ]
+        }
+      }
+    ]
+  },
+  "run_list": [
+    "recipe[starter::vagrant]",
+    "recipe[starter::app]"
+  ]
+}

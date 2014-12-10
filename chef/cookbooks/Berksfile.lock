@@ -1,0 +1,47 @@
+DEPENDENCIES
+  mysql
+  nginx
+  openssl
+  rbenv
+    git: git@github.com:fnichol/chef-rbenv.git
+    revision: 0a3018634bafe58ad21c6ee271af015220e444b9
+  redisio
+    git: git@github.com:brianbianco/redisio.git
+    revision: 2b7fc068417fb95758b07bc4f6e3c4a450419812
+  ruby_build
+  timezone
+  varnish
+
+GRAPH
+  apt (2.4.0)
+  bluepill (2.3.1)
+    rsyslog (>= 0.0.0)
+  build-essential (2.0.2)
+  java (1.22.0)
+  mysql (5.2.10)
+  nginx (2.7.0)
+    apt (~> 2.2)
+    bluepill (~> 2.3)
+    build-essential (~> 2.0)
+    ohai (~> 2.0)
+    runit (~> 1.2)
+    yum-epel (~> 0.3)
+  ohai (2.0.0)
+  openssl (1.1.0)
+  rbenv (0.7.3)
+    java (> 1.4.0)
+    ruby_build (>= 0.0.0)
+  redisio (1.7.1)
+    ulimit (>= 0.1.2)
+  rsyslog (1.12.2)
+  ruby_build (0.8.0)
+  runit (1.5.10)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  timezone (0.0.1)
+  ulimit (0.3.2)
+  varnish (0.9.12)
+  yum (3.2.0)
+  yum-epel (0.3.6)
+    yum (~> 3.0)

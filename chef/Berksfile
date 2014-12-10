@@ -1,0 +1,9 @@
+source 'https://api.berkshelf.com/'
+
+cookbook 'mysql'
+cookbook 'openssl'
+cookbook 'nginx'
+cookbook 'ruby_build'
+cookbook 'rbenv', git: 'git@github.com:fnichol/chef-rbenv.git'
+cookbook 'timezone'
+cookbook 'redisio', git: 'git@github.com:brianbianco/redisio.git'
