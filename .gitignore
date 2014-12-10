@@ -16,4 +16,4 @@
 /tmp
 
 /vendor/bundle/
-/.vagrant
+/vagrant/.vagrant
