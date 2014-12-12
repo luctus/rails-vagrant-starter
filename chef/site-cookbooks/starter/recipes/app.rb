@@ -1,5 +1,5 @@
 package "ruby1.9.1-dev"
-gem_package "rails"
+package "htop"
 
 include_recipe "ruby_build"
 include_recipe "rbenv::user"

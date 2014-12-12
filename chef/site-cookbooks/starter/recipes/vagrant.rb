@@ -6,3 +6,5 @@ package "libqt4-dev"
 package "libicu48"
 package "vim"
 package "phantomjs"
+
+gem_package "rails"
