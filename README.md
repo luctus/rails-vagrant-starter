@@ -24,7 +24,9 @@ Search for ```starter``` and replace it for ```your_project_name```
 - Generate your DB, ```bin/rake db:create```
 - Then visit the ip defined in the ```Vagrantfile``` in your browser. 
 - Voila! Your Rails app is up and running 
-
+- Create your personal repo called ```your_project_name```
+- Point your starter project to your new repo```git remote add origin git@github.com:your_user/your_project_name.git```
+- Push it, ```git push -u origin master```
 
 
 
