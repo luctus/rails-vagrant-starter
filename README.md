@@ -1,4 +1,4 @@
-#starter
+#starter [![Stories in Ready](https://badge.waffle.io/luctus/starter.svg)](http://waffle.io/luctus/starter)
 
 All you need to start a new Rails / Nginx / Passenger / Mysql project with **Vagrant** and **Chef**.
 
