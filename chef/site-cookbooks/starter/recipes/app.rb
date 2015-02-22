@@ -1,5 +1,4 @@
 package "ruby1.9.1-dev"
-package "htop"
 
 include_recipe "ruby_build"
 include_recipe "rbenv::user"
@@ -8,7 +7,6 @@ include_recipe 'mysql::client'
 
 include_recipe "nginx::source"
 include_recipe "nginx::passenger"
-
 
 # nginx virtual host configuration
 
