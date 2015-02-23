@@ -1,18 +1,18 @@
-#starter [![Stories in Ready](https://badge.waffle.io/luctus/starter.svg)](http://waffle.io/luctus/starter)
+#rails-vagrant [![Stories in Ready](https://badge.waffle.io/luctus/rails-vagrant-starter.svg)](http://waffle.io/luctus/rails-vagrant-starter)
 
 All you need to start a new Rails / Nginx / Passenger / Mysql project with **Vagrant** and **Chef**.
 
 Just download this repo, rename some variables and type ```vagrant up```
 
 ###What am I going to install (with chef)?
-- ruby 2.1.5 (rbenv)
+- ruby 2.2.0 (rbenv)
 - rails (latest stable version)
-- passenger 5.0.0.beta1
+- passenger 5.0.0.rc2
 - mysql (user: root | pass: admin)
-- nginx 1.6.2
+- nginx 1.7.10
 
 ###What variables do I need to rename?
-Search for ```starter``` and replace it for ```your_project_name```
+Search for ```rails-vagrant-starter``` and replace it for ```your_project_name```
 
 ###Ok, What should I do?
 - Once you replaced all the ```starter``` strings with you project's name, type ```cd vagrant && vagrant up```. 
