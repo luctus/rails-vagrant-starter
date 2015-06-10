@@ -35,12 +35,12 @@ vb.customize ["modifyvm", :id, "--name", "MY_APP"]
 You are ready to go, just type (and wait):
 ```
 my_app/vagrant $ vagrant up
-
 ```
 Once it ends, let's go into the VM and create the rails project:
 ```
 my_app/vagrant $ vagrant ssh
 vagrant $ cd /starter
+starter $ gem update --system
 starter $ rails new ../starter
 starter $ bundle install --no-deployment; bundle install --deployment
 starter $ bin/rake db:create
