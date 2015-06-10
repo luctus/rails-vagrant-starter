@@ -1,6 +1,6 @@
-name             'scheduler'
-maintainer       'The Amazing Dev Team'
-maintainer_email 'dev@archdaily.com'
+name             'starter'
+maintainer       'Gustavo Garcia'
+maintainer_email 'luctus@gmail.com'
 license          'All rights reserved'
 description      'Installs/Configures scheluder'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
